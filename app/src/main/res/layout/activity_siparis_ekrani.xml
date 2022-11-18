@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".SiparisEkrani">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="101dp"
+        android:layout_height="76dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/stlogo" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="366dp"
+        android:layout_height="92dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="#FF6D00"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewExtra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewicerik"
+        android:layout_width="371dp"
+        android:layout_height="197dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="#FF6D00"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewExtra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <TextView
+        android:id="@+id/textViewExtra"
+        android:layout_width="360dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="256dp"
+        android:gravity="center"
+        android:text="Extra İstek : "
+        android:textAlignment="center"
+        android:textColor="#FF6D00"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewYeniSiparis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="184dp"
+        android:onClick="yeniSiparis"
+        android:text="Yeni Sipariş"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/uygKapat"
+        android:layout_width="112dp"
+        android:layout_height="96dp"
+        android:onClick="uygFinish"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewYeniSiparis"
+        app:layout_constraintVertical_bias="0.237"
+        app:srcCompat="@drawable/carpi" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
